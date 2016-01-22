@@ -77,6 +77,10 @@
             {% endfor %}
 		<meta property="og:site_name" content="{{ SITENAME }}">
 	{% endblock opengraph %}
+	
+	{% if EXTRA_HEADER %}
+		{{ EXTRA_HEADER }}
+	{% endif %}
 </head>
 
 <body>
